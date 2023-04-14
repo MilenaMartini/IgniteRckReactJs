@@ -1,0 +1,5 @@
+.header{
+    background: var(--gray-800);
+    display: flex;
+    justify-content: center;
+}
