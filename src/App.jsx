@@ -1,6 +1,6 @@
 //paginas e componentes
-import { Post } from "./Post"
 import {Header} from "./components/Header/Header"
+import { Post } from "./components/Post/Post"
 
 //estilos
 import "./Global.css"
