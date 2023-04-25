@@ -4,12 +4,6 @@
   gap: 1rem;
 }
 
-.comment > img {
-  width: 3rem ;
-  height: 3rem;
-  border-radius: 8px;
-}
-
 .commentBox {
   flex: 1;
 }
@@ -27,10 +21,11 @@
 }
 
 
-.authorAndTime strong {
+.authorAndTime a {
   display: block;
   font-size: 0.875rem;
   line-height: 1.6;
+  color: var(--green-500);
 }
 
 .authorAndTime time {

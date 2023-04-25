@@ -1,17 +1,16 @@
 import { Comment } from "../Comment/Comment"
 import styles from "./Post.module.css"
+import { Avatar } from "../Avatar/Avatar"
 
 export function Post() {
   return(
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar}
-            src="https://github.com/MilenaMartini.png"
-          />
+        <Avatar src="https://github.com/JVtristaoAC.png"/>
           <div className={styles.authorInfo}>
-            <strong>Milena Martini</strong>
-            <span>Desenvolvedora Front-end</span>
+            <strong>João Vitor</strong>
+            <span>Desenvolvedor Back-end</span>
           </div>
         </div>
 
@@ -23,12 +22,12 @@ export function Post() {
 
           <p>  Acabei de subir mais um projeto no meu portifolio.</p>
 
-          <p><a href="">github.com/MilenaMartini </a></p>
+          <p><a href="https://github.com/JVtristaoAC">https://github.com/JVtristaoAC </a></p>
 
           <p>
-            <a href=""> #novoprojeto</a> {' '}
-            <a href=""> #nlw </a> {' '}
-            <a href=""> #rocketseat </a>
+            <a href="https://github.com/JVtristaoAC?tab=repositories"> #novoprojeto</a> {' '}
+            <a href="https://github.com/JVtristaoAC/Star_Raze.git"> #star_raze </a> {' '}
+            <a href="https://github.com/JVtristaoAC/Star_Raze.git"> #tcc_etec </a>
           </p>
         </div>
 
