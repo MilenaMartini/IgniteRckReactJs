@@ -1,3 +1,3 @@
 # IgniteRckReactJs Imagem do Projeto atualmente:
 
-![image](![image](https://user-images.githubusercontent.com/84812552/234646246-5507ad72-7393-4548-99bb-da52464a50f0.png))
+![image](https://user-images.githubusercontent.com/84812552/234646327-cddff4a8-6829-4c86-b080-ea5b1a7e4800.png)
