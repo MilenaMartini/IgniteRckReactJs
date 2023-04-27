@@ -70,7 +70,9 @@ function App() {
     <div className={styles.wrapper}>
       <Sidebar />
       <main>
-          { posts }
+          { posts.map(post => {
+            return <Post />
+          }) }
       </main>
     </div>
    </div>
