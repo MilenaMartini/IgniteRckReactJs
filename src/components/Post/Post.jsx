@@ -18,17 +18,7 @@ export function Post() {
       </header>
 
          <div className={styles.content}>
-          <p>  Fala galeraa 👋</p>
-
-          <p>  Acabei de subir mais um projeto no meu portifolio.</p>
-
-          <p><a href="https://github.com/JVtristaoAC">https://github.com/JVtristaoAC </a></p>
-
-          <p>
-            <a href="https://github.com/JVtristaoAC?tab=repositories"> #novoprojeto</a> {' '}
-            <a href="https://github.com/JVtristaoAC/Star_Raze.git"> #star_raze </a> {' '}
-            <a href="https://github.com/JVtristaoAC/Star_Raze.git"> #tcc_etec </a>
-          </p>
+          
         </div>
 
         <form className={styles.commentForm}>
