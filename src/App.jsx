@@ -30,23 +30,23 @@ import { Sidebar } from "./components/Sidebar/Sidebar"
     {
       id: 1,
       author: {
-        avatarUrl: 'https://github.com/JVtristaoAC',
+        avatarUrl: 'https://github.com/JVtristaoAC.png',
         name: 'João Vitor',
         role: 'Desenvolvedor Back-end'
       },
-      content: [  
-        {type: 'paragraph', content: ' Fala galeraa 👋'},
+      content: [
+        {type: 'paragraph', content: ' Fala galeraa 👋', },
 
         {type: 'paragraph', content:' Acabei de subir mais um projeto no meu portifolio.'},
 
         {type: 'link', content:'github.com/JVtristaoAC">https://github.com/JVtristaoAC'},
       ],
-      publisheAt: new Date('2023-04-27 15:10:00')
+      publishedAt: new Date('2023-04-27 15:10:00')
     }, 
     {
       id: 2,
       author: {
-        avatarUrl: 'https://github.com/MilenaMartini',
+        avatarUrl: 'https://github.com/MilenaMartini.png',
         name: 'Milena Martini',
         role: 'Desenvolvedor Front-end'
       },
@@ -57,7 +57,7 @@ import { Sidebar } from "./components/Sidebar/Sidebar"
 
         {type: 'link', content:'github.com/JVtristaoAC">https://github.com/JVtristaoAC'},
       ],
-      publisheAt: new Date('2023-04-30 15:10:00')
+      publishedAt: new Date('2023-04-30 15:10:00')
     },
   ];
 
@@ -71,8 +71,14 @@ function App() {
       <Sidebar />
       <main>
           { posts.map(post => {
-            return <Post />
-          }) }
+            return (
+            <Post 
+              author={post.author}
+              content={post.content}
+              publishedAt={post.publishedAt}
+            />
+            )
+          })}
       </main>
     </div>
    </div>
