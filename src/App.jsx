@@ -7,25 +7,6 @@ import "./Global.css"
 import styles from "./App.module.css"
 import { Sidebar } from "./components/Sidebar/Sidebar"
 
-/*author: { avatar_url: "", name:"", role: "" }
-  publishedAt: Date
-  content: String
-  */
-
-  /*
-  <p>  Fala galeraa 👋</p>
-
-          <p>  Acabei de subir mais um projeto no meu portifolio.</p>
-
-          <p><a href="https://github.com/JVtristaoAC">https://github.com/JVtristaoAC </a></p>
-
-          <p>
-            <a href="https://github.com/JVtristaoAC?tab=repositories"> #novoprojeto</a> {' '}
-            <a href="https://github.com/JVtristaoAC/Star_Raze.git"> #star_raze </a> {' '}
-            <a href="https://github.com/JVtristaoAC/Star_Raze.git"> #tcc_etec </a>
-          </p>
-   */
-
   const posts = [
     {
       id: 1,
@@ -42,7 +23,7 @@ import { Sidebar } from "./components/Sidebar/Sidebar"
         {type: 'link', content:'github.com/JVtristaoAC">https://github.com/JVtristaoAC'},
       ],
       publishedAt: new Date('2023-04-27 15:10:00')
-    }, 
+    },
     {
       id: 2,
       author: {
@@ -50,7 +31,7 @@ import { Sidebar } from "./components/Sidebar/Sidebar"
         name: 'Milena Martini',
         role: 'Desenvolvedor Front-end'
       },
-      content: [  
+      content: [
         {type: 'paragraph', content: ' Fala galeraa 👋'},
 
         {type: 'paragraph', content:' Acabei de subir mais um projeto no meu portifolio.'},
