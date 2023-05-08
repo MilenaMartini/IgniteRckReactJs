@@ -15,6 +15,7 @@ export function Post({author, publishedAt, content}) {
 
   const [newCommentText, setNewCommentText] = useState('')
 
+  console.log(newCommentText);
    const publisheDateFormatted = format(publishedAt, "dd 'de' LLLL 'às' HH:mm'h'", {
     locale: ptBR,
   })
@@ -31,10 +32,15 @@ export function Post({author, publishedAt, content}) {
 
     setComments([...comments, newCommentText]);
     setNewCommentText('');
-  } 
+  }
 
   function handleNewCommentChange () {
+    event.target.setCustomValidity('')
     setNewCommentText(event.target.value);
+  }
+
+  function handleNewCommentInvalid() {
+    event.target.setCustomValidity('Esse campo é obrigatório')
   }
 
   function deleteComment(commentToDelete) {
@@ -44,6 +50,8 @@ export function Post({author, publishedAt, content}) {
 
        setComments(commentsWithoutDeletedOne);
   }
+
+  const isNewCommentEmpty = newCommentText.length === 0;
 
   return(
     <article className={styles.post}>
@@ -78,9 +86,15 @@ export function Post({author, publishedAt, content}) {
           placeholder="Deixe um comentário"
           value={newCommentText}
           onChange={handleNewCommentChange}
+          onInvalid={handleNewCommentInvalid}
+          //^é chamada quando tenta realizar um submit mas o texto é invalido tipo vazio
+          required
+          //^validação 
           />
           <footer>
-            <button type="submit">Postar</button>
+            <button type="submit" disabled={isNewCommentEmpty}>
+              Postar
+            </button>
           </footer>
         </form>
 
