@@ -20,7 +20,7 @@ import { Sidebar } from "./components/Sidebar/Sidebar"
 
         {type: 'paragraph', content:' Acabei de subir mais um projeto no meu portifolio.'},
 
-        {type: 'link', content:'github.com/JVtristaoAC">https://github.com/JVtristaoAC'},
+        {type: 'link', content:'#github.com/JVtristaoAC'},
       ],
       publishedAt: new Date('2023-04-27 15:10:00')
     },
@@ -36,7 +36,7 @@ import { Sidebar } from "./components/Sidebar/Sidebar"
 
         {type: 'paragraph', content:' Acabei de subir mais um projeto no meu portifolio.'},
 
-        {type: 'link', content:'github.com/JVtristaoAC">https://github.com/JVtristaoAC'},
+        {type: 'link', content:'#github.com/MilenaMartini'},
       ],
       publishedAt: new Date('2023-04-30 15:10:00')
     },
