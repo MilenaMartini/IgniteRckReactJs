@@ -1,11 +1,12 @@
 //paginas e componentes
 import {Header} from "./components/Header/Header"
 import { Post } from "./components/Post/Post"
+import { Sidebar } from "./components/Sidebar/Sidebar"
 
 //estilos
 import "./Global.css"
 import styles from "./App.module.css"
-import { Sidebar } from "./components/Sidebar/Sidebar"
+
 
   const posts = [
     {
